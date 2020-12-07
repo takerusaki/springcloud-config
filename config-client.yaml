@@ -5,14 +5,14 @@ spring:
 ---
 server: 
   port: 9701
-#springÅäÖÃ
+#springé…ç½®
 spring:
   profiles: dev
   application:
     name: springcloud-provider-dept
 
     
-#eurekaµÄÅäÖÃ£¬·şÎñ×¢²áµ½ÄÄÀï(¼´×¢²áÖĞĞÄÅäÖÃµÄurl)
+#eurekaçš„é…ç½®ï¼ŒæœåŠ¡æ³¨å†Œåˆ°å“ªé‡Œ(å³æ³¨å†Œä¸­å¿ƒé…ç½®çš„url)
 eureka:
   client:
     service-url:
@@ -22,14 +22,14 @@ eureka:
 server: 
   port: 9702
   
-#springÅäÖÃ  
+#springé…ç½®  
 spring:
   profiles: test
   application:
     name: springcloud-provider-dept
 
     
-#eurekaµÄÅäÖÃ£¬·şÎñ×¢²áµ½ÄÄÀï(¼´×¢²áÖĞĞÄÅäÖÃµÄurl)
+#eurekaçš„é…ç½®ï¼ŒæœåŠ¡æ³¨å†Œåˆ°å“ªé‡Œ(å³æ³¨å†Œä¸­å¿ƒé…ç½®çš„url)
 eureka:
   client:
     service-url:
