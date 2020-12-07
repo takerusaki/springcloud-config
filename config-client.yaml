@@ -19,10 +19,10 @@ eureka:
       defaultZone: http://eureka8005.com:8005/eureka/
       
 ---
-#spring≈‰÷√
 server: 
   port: 9702
   
+#spring≈‰÷√  
 spring:
   profiles: test
   application:
