@@ -1,0 +1,76 @@
+spring:
+  profiles: 
+    active: dev
+---
+
+server:
+  port: 8001
+
+#spring配置
+spring:
+  profiles: dev
+  application:
+    name: springcloud-provider-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/clouddb02?serverTimezone=Asia/Shanghai&useSSL=true&useUnicode=true&characterEncoding=UTF-8"
+    username: root
+    password: 521116
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.crane.springcloud.pojo
+  #注册mapper.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+#eureka的配置，服务注册到哪里(即注册中心配置的url)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8005.com:8005/eureka/,http://eureka8006.com:8006/eureka/,http://eureka8007.com:8007/eureka/
+  instance:
+    instance-id: springcloud-provider-dept-8001  #修改eureka监控页面上的默认信息
+
+#info配置（导actuator监控info信息）
+info:
+  app.name: crane
+  company: ET
+  
+---
+
+server:
+  port: 8001
+
+#spring配置
+spring:
+  profiles: test
+  application:
+    name: springcloud-provider-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/clouddb02?serverTimezone=Asia/Shanghai&useSSL=true&useUnicode=true&characterEncoding=UTF-8"
+    username: root
+    password: 521116
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.crane.springcloud.pojo
+  #注册mapper.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+#eureka的配置，服务注册到哪里(即注册中心配置的url)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8005.com:8005/eureka/,http://eureka8006.com:8006/eureka/,http://eureka8007.com:8007/eureka/
+  instance:
+    instance-id: springcloud-provider-dept-8001  #修改eureka监控页面上的默认信息
+
+#info配置（导actuator监控info信息）
+info:
+  app.name: crane
+  company: ET
