@@ -6,7 +6,7 @@ spring:
 server:
   port: 8001
 
-#springÅäÖÃ
+#springé…ç½®
 spring:
   profiles: dev
   application:
@@ -18,22 +18,22 @@ spring:
     username: root
     password: 521116
 
-#mybatisÅäÖÃ
+#mybatisé…ç½®
 mybatis:
   type-aliases-package: com.crane.springcloud.pojo
-  #×¢²ámapper.xml
+  #æ³¨å†Œmapper.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 
-#eurekaµÄÅäÖÃ£¬·şÎñ×¢²áµ½ÄÄÀï(¼´×¢²áÖĞĞÄÅäÖÃµÄurl)
+#eurekaçš„é…ç½®ï¼ŒæœåŠ¡æ³¨å†Œåˆ°å“ªé‡Œ(å³æ³¨å†Œä¸­å¿ƒé…ç½®çš„url)
 eureka:
   client:
     service-url:
       defaultZone: http://eureka8005.com:8005/eureka/,http://eureka8006.com:8006/eureka/,http://eureka8007.com:8007/eureka/
   instance:
-    instance-id: springcloud-provider-dept-8001  #ĞŞ¸Äeureka¼à¿ØÒ³ÃæÉÏµÄÄ¬ÈÏĞÅÏ¢
+    instance-id: springcloud-provider-dept-8001  #ä¿®æ”¹eurekaç›‘æ§é¡µé¢ä¸Šçš„é»˜è®¤ä¿¡æ¯
 
-#infoÅäÖÃ£¨µ¼actuator¼à¿ØinfoĞÅÏ¢£©
+#infoé…ç½®ï¼ˆå¯¼actuatorç›‘æ§infoä¿¡æ¯ï¼‰
 info:
   app.name: crane
   company: ET
@@ -43,7 +43,7 @@ info:
 server:
   port: 8001
 
-#springÅäÖÃ
+#springé…ç½®
 spring:
   profiles: test
   application:
@@ -55,22 +55,22 @@ spring:
     username: root
     password: 521116
 
-#mybatisÅäÖÃ
+#mybatisé…ç½®
 mybatis:
   type-aliases-package: com.crane.springcloud.pojo
-  #×¢²ámapper.xml
+  #æ³¨å†Œmapper.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 
-#eurekaµÄÅäÖÃ£¬·şÎñ×¢²áµ½ÄÄÀï(¼´×¢²áÖĞĞÄÅäÖÃµÄurl)
+#eurekaçš„é…ç½®ï¼ŒæœåŠ¡æ³¨å†Œåˆ°å“ªé‡Œ(å³æ³¨å†Œä¸­å¿ƒé…ç½®çš„url)
 eureka:
   client:
     service-url:
       defaultZone: http://eureka8005.com:8005/eureka/,http://eureka8006.com:8006/eureka/,http://eureka8007.com:8007/eureka/
   instance:
-    instance-id: springcloud-provider-dept-8001  #ĞŞ¸Äeureka¼à¿ØÒ³ÃæÉÏµÄÄ¬ÈÏĞÅÏ¢
+    instance-id: springcloud-provider-dept-8001  #ä¿®æ”¹eurekaç›‘æ§é¡µé¢ä¸Šçš„é»˜è®¤ä¿¡æ¯
 
-#infoÅäÖÃ£¨µ¼actuator¼à¿ØinfoĞÅÏ¢£©
+#infoé…ç½®ï¼ˆå¯¼actuatorç›‘æ§infoä¿¡æ¯ï¼‰
 info:
   app.name: crane
   company: ET
